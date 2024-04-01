@@ -1,0 +1,192 @@
+.steps {
+    display: flex;
+    overflow-x: scroll;
+    background: #fff;
+}
+
+
+.tab-item {
+    min-width: 300px;
+    height: 124px;
+    border-right: 1px outset rgba(0, 0, 0, 0.08);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.tab-icon-holder {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border:1px solid #00000014;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-item.active img {
+    filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(190deg) brightness(90%) contrast(89%);
+}
+
+.tab-item:hover {
+    background: #0381FF08;
+    cursor: pointer;
+}
+
+.tab-item:last-child {
+    border-right: 0;
+}
+
+.tab-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tab-span {
+    margin-left: 16px;
+}
+
+.animation-container {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-images {
+    width: 280px;
+    height: 280px;
+}
+
+.tab-images img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.tab-title {
+    color: #0381FF;
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.tab-head {
+    color: #0B122A;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.tab-explain {
+    color: #0B172A;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.tab-button {
+    border: 0.5px #E5E5E5 solid;
+    padding: 15px 20px 15px 20px;
+    background-color: white;
+    width: 135px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0B122A;
+}
+
+.tab-button:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1366px) {
+    .description {
+        text-align: right;
+        align-items: end;
+    }
+
+    .card {
+        flex-direction: row;
+    }
+
+    .tab-item {
+        min-width: 260px;
+        padding: 0 30px;
+    }
+
+    .steps {
+        overflow-x: hidden;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .tab-images {
+        margin-left: 40px;
+        width: 610px;
+        height: 610px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.tab-item.active .loader {
+    display: block;
+}
+
+.loader {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 56px;
+    height: 56px;
+}
+.lds-ring div {
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    margin: 1px;
+    border: 1px solid #0381FF;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 0) forwards;
+    border-color: #0381FF;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(395deg);
+        border-color: transparent transparent transparent #0381FF;
+    }
+    100% {
+        transform: rotate(0deg);
+        border-color: #0381FF;
+    }
+}
+

@@ -1,0 +1,24 @@
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F7;
+}
+
+.context {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 100%;
+  border: 1px gray;
+  justify-content: center;
+  background: #FBFCFC;
+}
+
+@media screen and (min-width: 959px) {
+  .context {
+    padding: 54px 0;
+  }
+}

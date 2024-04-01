@@ -1,0 +1,68 @@
+.phone-image {
+    position: absolute;
+    bottom: 0;
+    left: 2em;
+    z-index: 9;
+}
+
+.sign {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    top: 140px;
+    left: 0;
+}
+
+.stamp {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    top: 100px;
+    right: 0;
+}
+
+.animate-slide-in {
+    bottom: -700px;
+    animation: slideIn 1.4s forwards ease-in;
+}
+
+.animate-decorative {
+    scale: 0;
+    opacity: 0;
+    animation: scaleUp .8s forwards ease-in, fadeIn .8s forwards ease-in;
+}
+
+.delay-wait-phone {
+    animation-delay: 1.4s;
+}
+
+.delay-wait-sign {
+    animation-delay: 1.6s;
+}
+
+@keyframes slideIn {
+    0% {
+        bottom: -700px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        scale: 0;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

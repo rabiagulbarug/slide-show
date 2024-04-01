@@ -1,0 +1,80 @@
+.phone-image {
+    position: absolute;
+    bottom: 0;
+    left: 2em;
+    z-index: 9;
+}
+
+.animate-slide-in {
+    bottom: -700px;
+    animation: slideIn 1.4s forwards ease-in;
+}
+
+.doc-1 {
+    position: absolute;
+    width: 224px;
+    height: 100%;
+    object-fit: contain;
+    left: 43px;
+    top: 900px;
+    animation: doc1.8s forwards ease-in;
+    animation-delay: 3.0s;
+}
+
+.doc-2 {
+    position: absolute;
+    width: 208px;
+    height: 100%;
+    object-fit: contain;
+    left: 53px;
+    top: 900px;
+    animation: doc2.8s forwards ease-in;
+    animation-delay: 2.2s;
+}
+
+.doc-3 {
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    object-fit: contain;
+    left: 66px;
+    top: 900px;
+    animation: doc3.8s forwards ease-in;
+    animation-delay: 1.4s;
+}
+
+@keyframes slideIn {
+    0% {
+        bottom: -700px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes doc1 {
+    0% {
+        top: 900px
+    }
+    100% {
+        top: 72px;
+    }
+}
+
+@keyframes doc2 {
+    0% {
+        top: 900px
+    }
+    100% {
+        top: 58px;
+    }
+}
+
+@keyframes doc3 {
+    0% {
+        top: 900px
+    }
+    100% {
+        top: 50px;
+    }
+}
